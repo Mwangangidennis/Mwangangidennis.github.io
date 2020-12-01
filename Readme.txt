@@ -1,4 +1,5 @@
-Thanks for downloading this template!
+Dennis Mwangangi
+Prtifolio
 
 Template Name: Folio
 Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
