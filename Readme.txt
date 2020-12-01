@@ -1,5 +1,5 @@
 Dennis Mwangangi
-Prtifolio
+Portifolio
 
 Template Name: Folio
 Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
