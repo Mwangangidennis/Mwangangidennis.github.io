@@ -4,18 +4,73 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
+#collect the name
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $namein = $_POST['name'];
+  if (empty($namein)) {
+    echo "Name is empty";
+  } else {
+    #echo $namein;
+  }
+}
+#namein end
 
-$namein = "Dennis";
-$emailin = "test@pm.me";
-$subjectin = "Hallo";
-$messagein =  "Test message";
-var_dump("eeefwe");
+#Collect the email
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $emailin = $_POST['email'];
+  if (empty($emailin)) {
+    echo "Name is empty";
+  } else {
+    #echo $emailin;
+  }
+}
+#email end
+
+#Collect the Subject
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $subjectin = $_POST['subject'];
+  if (empty($subjectin)) {
+    echo "Name is empty";
+  } else {
+    #echo $subjectin;
+  }
+}
+#Subject end
+
+#Collect the Message
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $messagein = $_POST['message'];
+  if (empty($messagein)) {
+    echo "Name is empty";
+  } else {
+    #echo $messagein;
+    echo "Successful! ";
+  }
+}
+#Message end
+
+
+# $namein = "Dennis";
+#subject$emailin = "test@pm.me";
+#$subjectin = "Hallo";
+#$messagein =  "Test message";
+
+#var_dump("eeefwe");
+
 $mysqli =new mysqli("localhost","portifolio","","contact_persons");
+
+/*
 if ($mysqli->connect_error) {
   die("Connection failed: " . $mysqli->connect_error);
 }else{
-  var_dump("expression");
+  var_dump(" Submission!");
 }
+*/
+
 $mysqli->query("INSERT INTO Details (C_Name,Email,Subject,Message) VALUES('".$namein."', '".$emailin."','".$subjectin."','" .$messagein."')");
 
   /**
